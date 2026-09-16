@@ -1,0 +1,181 @@
+:root {
+  color-scheme: light;
+  --ink: #202124;
+  --muted: #687076;
+  --line: #d9dee3;
+  --paper: #f7f8f5;
+  --card: #ffffff;
+  --accent: #176b87;
+  --accent-soft: #e5f2f5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.page-shell {
+  width: min(100% - 2rem, 880px);
+  margin: 0 auto;
+  padding: 4rem 0 5rem;
+}
+
+.page-header {
+  max-width: 620px;
+  margin-bottom: 3.5rem;
+}
+
+.eyebrow,
+.section-kicker {
+  margin: 0 0 0.75rem;
+  color: var(--accent);
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2.8rem, 8vw, 5.5rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.intro {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.repository-section {
+  border-top: 1px solid var(--line);
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0 1rem;
+}
+
+.section-kicker {
+  margin-bottom: 0.35rem;
+  font-size: 0.68rem;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.repository-count {
+  color: var(--muted);
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.repository-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.repository-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.25rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  background: var(--card);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.repository-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(32, 33, 36, 0.08);
+}
+
+.repository-name {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  color: var(--accent);
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.repository-description {
+  max-width: 600px;
+  margin-bottom: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.repository-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  color: var(--muted);
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 0.76rem;
+}
+
+.repository-stars {
+  align-self: start;
+  padding: 0.45rem 0.65rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-message {
+  padding: 1.25rem;
+  border: 1px dashed var(--line);
+  color: var(--muted);
+}
+
+@media (max-width: 560px) {
+  .page-shell {
+    padding-top: 2.5rem;
+  }
+
+  .page-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-heading,
+  .repository-card {
+    display: block;
+  }
+
+  .repository-count,
+  .repository-stars {
+    display: inline-block;
+    margin-top: 0.85rem;
+  }
+}

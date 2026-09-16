@@ -1,0 +1,46 @@
+[
+  {
+    "type": "WatchEvent",
+    "created_at": "2026-09-12T09:30:00Z",
+    "repo": {
+      "name": "microsoft/TypeScript",
+      "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+      "language": "TypeScript",
+      "html_url": "https://github.com/microsoft/TypeScript",
+      "stargazers_count": 104000
+    }
+  },
+  {
+    "type": "WatchEvent",
+    "created_at": "2026-09-05T14:15:00Z",
+    "repo": {
+      "name": "vitejs/vite",
+      "description": "Next generation frontend tooling. It's fast!",
+      "language": "JavaScript",
+      "html_url": "https://github.com/vitejs/vite",
+      "stargazers_count": 74000
+    }
+  },
+  {
+    "type": "WatchEvent",
+    "created_at": "2026-08-28T11:45:00Z",
+    "repo": {
+      "name": "sindresorhus/awesome",
+      "description": "😎 Awesome lists about all kinds of interesting topics.",
+      "language": null,
+      "html_url": "https://github.com/sindresorhus/awesome",
+      "stargazers_count": 390000
+    }
+  },
+  {
+    "type": "WatchEvent",
+    "created_at": "2026-08-19T16:20:00Z",
+    "repo": {
+      "name": "python/cpython",
+      "description": "The Python programming language.",
+      "language": "Python",
+      "html_url": "https://github.com/python/cpython",
+      "stargazers_count": 68000
+    }
+  }
+]
